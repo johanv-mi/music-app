@@ -1,0 +1,154 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "artist": "The Midnight",
+      "title": "Endless Summer",
+      "genre": "Synthwave"
+    },
+    {
+      "id": 2,
+      "artist": "Kendrick Lamar",
+      "title": "HUMBLE.",
+      "genre": "Hip Hop"
+    },
+    {
+      "id": 3,
+      "artist": "Florence + The Machine",
+      "title": "Dog Days Are Over",
+      "genre": "Indie Pop"
+    },
+    {
+      "id": 4,
+      "artist": "Johnny Cash",
+      "title": "Hurt",
+      "genre": "Country"
+    },
+    {
+      "id": 5,
+      "artist": "Metallica",
+      "title": "Enter Sandman",
+      "genre": "Rock"
+    },
+    {
+      "id": 6,
+      "artist": "FM-84",
+      "title": "Running In The Night",
+      "genre": "Synthwave"
+    },
+    {
+      "id": 7,
+      "artist": "Tyler, The Creator",
+      "title": "EARFQUAKE",
+      "genre": "Hip Hop"
+    },
+    {
+      "id": 8,
+      "artist": "Tame Impala",
+      "title": "Let It Happen",
+      "genre": "Indie Pop"
+    },
+    {
+      "id": 9,
+      "artist": "Dolly Parton",
+      "title": "Jolene",
+      "genre": "Country"
+    },
+    {
+      "id": 10,
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "genre": "Rock"
+    },
+    {
+      "id": 11,
+      "artist": "Gunship",
+      "title": "Tech Noir",
+      "genre": "Synthwave"
+    },
+    {
+      "id": 12,
+      "artist": "J. Cole",
+      "title": "No Role Modelz",
+      "genre": "Hip Hop"
+    },
+    {
+      "id": 13,
+      "artist": "MGMT",
+      "title": "Kids",
+      "genre": "Indie Pop"
+    },
+    {
+      "id": 14,
+      "artist": "Chris Stapleton",
+      "title": "Tennessee Whiskey",
+      "genre": "Country"
+    },
+    {
+      "id": 15,
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "genre": "Rock"
+    },
+    {
+      "id": 16,
+      "artist": "Carpenter Brut",
+      "title": "Turbo Killer",
+      "genre": "Synthwave"
+    },
+    {
+      "id": 17,
+      "artist": "Megan Thee Stallion",
+      "title": "Savage",
+      "genre": "Hip Hop"
+    },
+    {
+      "id": 18,
+      "artist": "Lana Del Rey",
+      "title": "Video Games",
+      "genre": "Indie Pop"
+    },
+    {
+      "id": 19,
+      "artist": "Willie Nelson",
+      "title": "On The Road Again",
+      "genre": "Country"
+    },
+    {
+      "id": 20,
+      "artist": "Nirvana",
+      "title": "Smells Like Teen Spirit",
+      "genre": "Rock"
+    },
+    {
+      "id": 21,
+      "artist": "Com Truise",
+      "title": "Brokendate",
+      "genre": "Synthwave"
+    },
+    {
+      "id": 22,
+      "artist": "Nicki Minaj",
+      "title": "Super Bass",
+      "genre": "Hip Hop"
+    },
+    {
+      "id": 23,
+      "artist": "Arctic Monkeys",
+      "title": "Do I Wanna Know?",
+      "genre": "Indie Pop"
+    },
+    {
+      "id": 24,
+      "artist": "Kacey Musgraves",
+      "title": "Rainbow",
+      "genre": "Country"
+    },
+    {
+      "id": 25,
+      "artist": "Foo Fighters",
+      "title": "Everlong",
+      "genre": "Rock"
+    }
+  ]
+}
