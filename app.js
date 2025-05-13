@@ -143,3 +143,14 @@ function savePlaylist() {
     alert("Cannot save an empty playlist.");
   }
 }
+
+function clearPlaylist() {
+  if (selectedList.length > 0) {
+    if (confirm("Are you sure you want to clear your playlist?")) {
+      selectedList = [];
+      renderPlaylist();
+    }
+  } else {
+    alert("Playlist is already empty.");
+  }
+}
