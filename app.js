@@ -26,3 +26,45 @@ async function fetchArtists() {
       "<p>Error loading artists. Please try again later.</p>";
   }
 }
+
+function renderArtists(artistsToRender) {
+  contentDiv.innerHTML = "";
+
+  if (artistsToRender.length === 0) {
+    contentDiv.innerHTML = "<p>No artists found for this genre.</p>";
+    return;
+  }
+
+  const artistList = document.createElement("ul");
+  artistList.className = "artist-list";
+
+  artistsToRender.forEach((artist) => {
+    const listItem = document.createElement("li");
+    listItem.className = "artist-item";
+    listItem.dataset.id = artist.id;
+
+    const artistName = document.createElement("h4");
+    artistName.textContent = artist.artist;
+
+    const songTitle = document.createElement("p");
+    songTitle.textContent = artist.title;
+
+    const genreTag = document.createElement("span");
+    genreTag.className = "genre-tag";
+    genreTag.textContent = artist.genre;
+
+    const addButton = document.createElement("button");
+    addButton.className = "add-to-list";
+    addButton.textContent = "+";
+    addButton.title = "Add to playlist";
+
+    listItem.appendChild(artistName);
+    listItem.appendChild(songTitle);
+    listItem.appendChild(genreTag);
+    listItem.appendChild(addButton);
+
+    artistList.appendChild(listItem);
+  });
+
+  contentDiv.appendChild(artistList);
+}
