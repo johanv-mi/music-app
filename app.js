@@ -86,3 +86,46 @@ function addToPlaylist(artistId) {
     renderPlaylist();
   }
 }
+
+function renderPlaylist() {
+  listContent.innerHTML = "";
+
+  if (selectedList.length === 0) {
+    listContent.innerHTML =
+      "<p>Your playlist is empty. Add songs from the artists list.</p>";
+    return;
+  }
+
+  const playlistList = document.createElement("ul");
+  playlistList.className = "playlist-list";
+
+  selectedList.forEach((item, index) => {
+    const listItem = document.createElement("li");
+    listItem.className = "playlist-item";
+
+    const songInfo = document.createElement("div");
+    songInfo.className = "song-info";
+
+    const artistName = document.createElement("h4");
+    artistName.textContent = item.artist;
+
+    const songTitle = document.createElement("p");
+    songTitle.textContent = item.title;
+
+    const removeButton = document.createElement("button");
+    removeButton.className = "remove-from-list";
+    removeButton.textContent = "×";
+    removeButton.title = "Remove from playlist";
+    removeButton.dataset.index = index;
+
+    songInfo.appendChild(artistName);
+    songInfo.appendChild(songTitle);
+
+    listItem.appendChild(songInfo);
+    listItem.appendChild(removeButton);
+
+    playlistList.appendChild(listItem);
+  });
+
+  listContent.appendChild(playlistList);
+}
