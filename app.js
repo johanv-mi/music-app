@@ -154,3 +154,43 @@ function clearPlaylist() {
     alert("Playlist is already empty.");
   }
 }
+
+function setupEventListeners() {
+  genreButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      genreButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+      filterArtistsByGenre(button.textContent);
+    });
+  });
+
+  contentDiv.addEventListener("click", (event) => {
+    if (event.target.classList.contains("add-to-list")) {
+      const listItem = event.target.closest(".artist-item");
+      if (listItem) {
+        addToPlaylist(listItem.dataset.id);
+      }
+    }
+  });
+
+  listContent.addEventListener("click", (event) => {
+    if (event.target.classList.contains("remove-from-list")) {
+      const index = parseInt(event.target.dataset.index);
+      removeFromPlaylist(index);
+    }
+  });
+
+  if (saveListButton) {
+    saveListButton.addEventListener("click", savePlaylist);
+  }
+
+  if (clearListButton) {
+    clearListButton.addEventListener("click", clearPlaylist);
+  }
+
+  const savedPlaylist = localStorage.getItem("savedPlaylist");
+  if (savedPlaylist) {
+    selectedList = JSON.parse(savedPlaylist);
+    renderPlaylist();
+  }
+}
