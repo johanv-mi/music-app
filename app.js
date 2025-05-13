@@ -194,3 +194,14 @@ function setupEventListeners() {
     renderPlaylist();
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetchArtists();
+
+  const allButton = document.querySelector(
+    ".genreContainer button:first-child"
+  );
+  if (allButton) {
+    allButton.classList.add("active");
+  }
+});
