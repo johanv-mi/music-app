@@ -129,3 +129,8 @@ function renderPlaylist() {
 
   listContent.appendChild(playlistList);
 }
+
+function removeFromPlaylist(index) {
+  selectedList.splice(index, 1);
+  renderPlaylist();
+}
