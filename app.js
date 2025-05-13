@@ -1,4 +1,5 @@
 let artists = [];
+let selectedList = [];
 
 const contentDiv = document.querySelector(".artistContainer .content");
 const genreButtons = document.querySelectorAll(".genreContainer button");
@@ -75,5 +76,13 @@ function filterArtistsByGenre(genre) {
   } else {
     const filteredArtists = artists.filter((artist) => artist.genre === genre);
     renderArtists(filteredArtists);
+  }
+}
+
+function addToPlaylist(artistId) {
+  const artist = artists.find((a) => a.id === parseInt(artistId));
+  if (artist && !selectedList.some((a) => a.id === artist.id)) {
+    selectedList.push(artist);
+    renderPlaylist();
   }
 }
