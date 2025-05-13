@@ -134,3 +134,12 @@ function removeFromPlaylist(index) {
   selectedList.splice(index, 1);
   renderPlaylist();
 }
+
+function savePlaylist() {
+  if (selectedList.length > 0) {
+    localStorage.setItem("savedPlaylist", JSON.stringify(selectedList));
+    alert("Playlist saved successfully!");
+  } else {
+    alert("Cannot save an empty playlist.");
+  }
+}
