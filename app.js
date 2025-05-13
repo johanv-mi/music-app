@@ -68,3 +68,12 @@ function renderArtists(artistsToRender) {
 
   contentDiv.appendChild(artistList);
 }
+
+function filterArtistsByGenre(genre) {
+  if (genre === "All") {
+    renderArtists(artists);
+  } else {
+    const filteredArtists = artists.filter((artist) => artist.genre === genre);
+    renderArtists(filteredArtists);
+  }
+}
